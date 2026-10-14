@@ -1,0 +1,20 @@
+-- =============================================================================
+-- Krøll CMS data safety notes (documentation only — safe to skip)
+-- Do NOT reset, delete, or reseed production. Do NOT auto-run from the app.
+-- =============================================================================
+--
+-- Source of truth for patterns / sections / yarns / images / PDFs:
+--   Supabase tables + Storage buckets (pattern-images, pattern-pdfs).
+--
+-- Frontend deploys (Netlify / Cursor / GitHub) ship CODE only.
+-- Hard-coded demos in src/data/demo are local/dev fallback and missing-id
+-- fill — they never overwrite an existing knitting_patterns row from the client.
+--
+-- If you need to seed demos into an EMPTY project, use:
+--   kroll-demo-seed.sql  (INSERT … ON CONFLICT DO NOTHING)
+-- Re-running that file against a catalog with Admin edits will NOT overwrite
+-- titles, images, PDFs, or sections.
+--
+-- Never use older seed variants that did "ON CONFLICT DO UPDATE" or
+-- "DELETE FROM pattern_sections WHERE pattern_id IN (demo ids)".
+-- =============================================================================

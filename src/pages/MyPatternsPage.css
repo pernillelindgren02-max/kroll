@@ -1,0 +1,38 @@
+.my-pattern-card {
+  display: grid;
+  gap: 0.85rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.my-pattern-card__cover {
+  height: 7.5rem;
+  border-radius: var(--radius-md);
+}
+
+.my-pattern-card__meta {
+  margin: 0 0 0.25rem;
+  font-size: 0.8rem;
+  color: var(--color-ink-soft);
+}
+
+.my-pattern-card__body h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.45rem;
+}
+
+.my-pattern-card__body > p {
+  margin: 0 0 0.85rem;
+  color: var(--color-ink-soft);
+}
+
+.my-pattern-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.55rem;
+}
+
+.continue-link {
+  text-align: center;
+}

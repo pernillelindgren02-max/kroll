@@ -1,0 +1,12 @@
+# Netlify — Krøll Vite + React Router (SPA)
+# CMS content lives in Supabase; this deploy ships code only.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA fallback so deep links (/admin, /oppskrift/:id, …) work
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

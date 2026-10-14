@@ -1,0 +1,56 @@
+.tech-overview {
+  margin: 1rem 0 1.35rem;
+  padding: 1rem 1.05rem;
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-surface) 80%, var(--color-wool-beige));
+  border: 1px solid var(--color-border);
+}
+
+.tech-overview h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+}
+
+.tech-overview__dl {
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.tech-overview__dl > div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.tech-overview__dl dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.tech-overview__dl dd {
+  margin: 0;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tech-overview__yarns {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.tech-overview__held {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--color-deep-plum);
+}
+
+.tech-overview__yarn-line {
+  display: block;
+}

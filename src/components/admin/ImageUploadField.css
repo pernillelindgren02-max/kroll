@@ -1,0 +1,46 @@
+.image-upload {
+  margin-bottom: 1rem;
+}
+
+.image-upload__label {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.image-upload__preview-wrap {
+  width: min(100%, 16rem);
+  aspect-ratio: 1 / 1;
+  margin-bottom: 0.55rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: color-mix(in srgb, var(--color-wool-beige) 70%, white);
+}
+
+.image-upload__preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-upload__fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: var(--color-ink-soft);
+  font-size: 0.88rem;
+}
+
+.image-upload__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.image-upload__error {
+  margin: 0.45rem 0 0;
+  color: var(--color-rust);
+  font-size: 0.88rem;
+}

@@ -1,0 +1,23 @@
+.account-card {
+  margin-bottom: 1rem;
+  padding: 1.1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.account-card h2 {
+  font-size: 1.25rem;
+}
+
+.lang-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+}
+
+.account-error {
+  margin: 0;
+  color: var(--color-accent);
+  font-weight: 600;
+}

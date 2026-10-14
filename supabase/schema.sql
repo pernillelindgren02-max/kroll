@@ -1,0 +1,9 @@
+-- Deprecated pointer — use the additive migration for the shared FGTG project:
+--
+--   kroll/supabase/kroll-schema.sql
+--
+-- That file creates Krøll-only tables + RLS + seed catalog rows.
+-- It reuses existing public.profiles / public.is_admin() and does not
+-- modify Fra gryte til gaffel tables.
+--
+-- Run manually in the Supabase SQL Editor. Do not auto-run from the app.

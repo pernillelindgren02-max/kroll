@@ -1,0 +1,17 @@
+.size-guide {
+  margin: 1.25rem 0;
+}
+
+.size-guide h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.25rem;
+}
+
+.size-guide > p {
+  margin: 0 0 0.55rem;
+}
+
+.size-guide__caveat {
+  margin-top: 0.65rem;
+  font-size: 0.88rem;
+}

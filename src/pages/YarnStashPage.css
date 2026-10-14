@@ -1,0 +1,80 @@
+.stash-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+  margin-bottom: 1.15rem;
+}
+
+.stash-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.stash-item {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.85rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.stash-item__swatch {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+}
+
+.stash-item__body {
+  min-width: 0;
+}
+
+.stash-item__body p {
+  margin: 0.15rem 0 0;
+  font-size: 0.88rem;
+  color: var(--color-ink-soft);
+}
+
+.muted {
+  opacity: 0.85;
+}
+
+.stash-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.yarn-pick-list {
+  display: grid;
+  gap: 0.45rem;
+  max-height: 14rem;
+  overflow: auto;
+}
+
+.yarn-pick {
+  display: grid;
+  gap: 0.15rem;
+  text-align: left;
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  min-height: var(--tap-min);
+}
+
+.yarn-pick span {
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+}
+
+.yarn-pick--active {
+  border-color: var(--color-accent);
+  background: var(--color-demo-bg);
+}

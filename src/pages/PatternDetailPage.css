@@ -1,0 +1,153 @@
+.pattern-detail__cover {
+  height: 10rem;
+  margin: 0 calc(-1 * var(--space-page-x)) 1.25rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.pattern-detail__designer {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.pattern-detail__header h1 {
+  font-size: clamp(2rem, 6vw, 2.6rem);
+  margin-bottom: 0.35rem;
+}
+
+.pattern-detail__header p {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.pattern-detail__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.chip {
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-wool-beige) 75%, var(--color-dusty-pink));
+  font-family: var(--font-body);
+}
+
+.chip--sage {
+  background: var(--color-sage-soft);
+  color: var(--color-sage);
+}
+
+.chip--demo {
+  background: var(--color-demo-bg);
+  color: var(--color-demo);
+}
+
+.chip--price {
+  background: color-mix(in srgb, var(--color-rust) 18%, var(--color-warm-cream));
+  color: var(--color-rust);
+}
+
+.technique-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-ink-soft);
+}
+
+.size-metres,
+.needle-list {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+}
+
+.size-table-wrap {
+  overflow-x: auto;
+  margin-top: 0.55rem;
+}
+
+.size-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.size-table th,
+.size-table td {
+  text-align: left;
+  padding: 0.35rem 0.45rem;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.pattern-detail__desc {
+  margin: 1.15rem 0;
+  color: var(--color-ink-soft);
+}
+
+.pattern-detail__match {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.pattern-detail__match h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.pattern-detail__match ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-ink-soft);
+  font-size: 0.92rem;
+}
+
+.info-block {
+  padding: 0.9rem 1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.info-block h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.info-block p {
+  margin: 0.2rem 0 0;
+  color: var(--color-ink-soft);
+}
+
+.pattern-detail__facts {
+  margin: 1.25rem 0;
+}
+
+.pattern-detail__actions {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+
+.resume-btn {
+  margin-bottom: 0.75rem;
+}
+
+.pattern-detail__toast {
+  margin-top: 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: var(--color-sage-soft);
+  color: var(--color-sage);
+  font-weight: 600;
+  text-align: center;
+}
