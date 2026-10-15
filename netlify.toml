@@ -1,5 +1,11 @@
 # Netlify — Krøll Vite + React Router (SPA)
 # CMS content lives in Supabase; this deploy ships code only.
+#
+# Required Site environment variables (same Supabase project as FGTG):
+#   VITE_SUPABASE_URL
+#   VITE_SUPABASE_PUBLISHABLE_KEY
+# Optional alias: VITE_SUPABASE_ANON_KEY (same publishable/anon key value)
+# Vite bakes these in at build time — set them, then Redeploy (clear cache).
 
 [build]
   command = "npm run build"

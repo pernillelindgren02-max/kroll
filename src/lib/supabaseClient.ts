@@ -39,13 +39,24 @@ export const supabase: SupabaseClient | null = isSupabaseConfigured
     })
   : null
 
+/** Hostname only — never log the publishable/anon key. */
+function supabaseHostLabel(): string {
+  try {
+    return new URL(url).host || '(empty)'
+  } catch {
+    return '(invalid VITE_SUPABASE_URL)'
+  }
+}
+
 export async function testSupabaseConnection(): Promise<void> {
   if (!supabase) {
     console.info(
-      '[Krøll/Supabase] Not configured. Paste VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY into kroll/.env.local and restart Vite.',
+      '[Krøll/Supabase] Not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY (same values as FGTG) in .env.local or Netlify env, then rebuild.',
     )
     return
   }
+
+  console.info('[Krøll/Supabase] Using project host:', supabaseHostLabel())
 
   try {
     const { error } = await supabase.auth.getSession()

@@ -27,12 +27,17 @@ export function AccountPage() {
     e.preventDefault()
     setBusy(true)
     setError(null)
-    const err =
-      mode === 'in'
-        ? await signIn(email, password)
-        : await signUp(email, password)
-    setError(err)
-    setBusy(false)
+    try {
+      const err =
+        mode === 'in'
+          ? await signIn(email, password)
+          : await signUp(email, password)
+      setError(err)
+    } catch {
+      setError('Kunne ikke fullføre innloggingen / Sign-in failed.')
+    } finally {
+      setBusy(false)
+    }
   }
 
   return (

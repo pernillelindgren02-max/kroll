@@ -313,7 +313,7 @@ const no: Catalog = {
   'account.language': 'Språk',
   'account.guest': 'Du er ikke innlogget — data lagres lokalt på denne enheten.',
   'account.configuredOff':
-    'Supabase er ikke konfigurert. Fyll inn .env.local for ekte innlogging.',
+    'Supabase er ikke konfigurert. Sett VITE_SUPABASE_URL og VITE_SUPABASE_PUBLISHABLE_KEY (samme som FGTG) i .env.local eller Netlify, og bygg på nytt.',
   'account.demoUser': 'Fortsett som lokal bruker (demo)',
   'lang.chooseTitle': 'Velg språk',
   'lang.chooseLead': 'Du kan endre dette senere under Konto.',
@@ -485,7 +485,7 @@ const en: Catalog = {
   'account.language': 'Language',
   'account.guest': 'Not signed in — data is stored locally on this device.',
   'account.configuredOff':
-    'Supabase is not configured. Fill in .env.local for real sign-in.',
+    'Supabase is not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY (same as FGTG) in .env.local or Netlify, then rebuild.',
   'account.demoUser': 'Continue as local user (demo)',
   'lang.chooseTitle': 'Choose language',
   'lang.chooseLead': 'You can change this later under Account.',
